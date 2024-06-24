@@ -35,3 +35,5 @@ dist/
 *.swp
 
 # Add other exclusions as needed
+Procfile
+runtime.txt
