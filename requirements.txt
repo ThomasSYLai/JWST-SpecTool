@@ -3,3 +3,4 @@ numpy==1.24.4
 pandas==2.0.3
 gunicorn
 dash-tools
+openpyxl
