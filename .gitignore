@@ -1,0 +1,37 @@
+# Exclude Mac system files
+.DS_Store
+
+# Exclude node_modules directory
+node_modules/
+
+# Exclude log files
+*.log
+
+# Exclude Python compiled files
+__pycache__/
+*.py[cod]
+
+# Exclude environment files
+.env
+.venv/
+env/
+venv/
+
+# Exclude Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Exclude VSCode settings
+.vscode/
+
+# Exclude JetBrains IDEs settings
+.idea/
+
+# Exclude build directories
+build/
+dist/
+
+# Exclude temporary files
+*.tmp
+*.swp
+
+# Add other exclusions as needed
