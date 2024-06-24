@@ -5,6 +5,8 @@ import numpy as np
 import plotly.graph_objs as go
 import pandas as pd
 
+import logging
+
 app = dash.Dash(__name__)
 server = app.server
 
@@ -69,6 +71,10 @@ for i in range(0,12):
 
 # Read in MIRI imaging filters
 band_list = ['F560W', 'F770W', 'F1000W', 'F1130W', 'F1280W', 'F1500W', 'F1800W', 'F2100W', 'F2550W']
+
+logging.basicConfig(level=logging.INFO)
+logging.info(f"Current working directory: {os.getcwd()}")
+
 
 img_dirc = './JWST_filter/image/'
 
