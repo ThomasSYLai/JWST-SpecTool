@@ -75,7 +75,7 @@ band_list = ['F560W', 'F770W', 'F1000W', 'F1130W', 'F1280W', 'F1500W', 'F1800W',
 
 logging.basicConfig(level=logging.INFO)
 logging.info(f"Current working directory: {os.getcwd()}")
-
+logging.info(f"Contents of current directory: {os.listdir()}")
 
 img_dirc = './JWST_filter/image/'
 
