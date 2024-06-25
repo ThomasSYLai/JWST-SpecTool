@@ -73,10 +73,6 @@ for i in range(0,12):
 # Read in MIRI imaging filters
 band_list = ['F560W', 'F770W', 'F1000W', 'F1130W', 'F1280W', 'F1500W', 'F1800W', 'F2100W', 'F2550W']
 
-logging.basicConfig(level=logging.INFO)
-logging.info(f"Current working directory: {os.getcwd()}")
-logging.info(f"Contents of current directory: {os.listdir()}")
-
 img_dirc = './JWST_filter/image/'
 
 for b in band_list:
@@ -245,10 +241,6 @@ def update_spectrum_plot(redshift_value, selected_species, existing_figure):
         existing_figure['data'].extend(lines)
 
     return existing_figure
-
-logging.basicConfig(level=logging.INFO)
-logging.info(f"Current working directory (before run_server): {os.getcwd()}")
-logging.info(f"Contents of current directory (before run_server): {os.listdir()}")
 
 # app.run_server(debug=True, use_reloader=True, port=8052)
 
