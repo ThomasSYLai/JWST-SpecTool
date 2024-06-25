@@ -155,7 +155,8 @@ species_options = [{'label': species, 'value': species} for species in unique_sp
 # Define the app layout using the list of traces
 app.layout = html.Div([
     html.H1("JWST Imager & IFU Filter Viewer"),
-    
+    html.P("Made by Thomas Lai (Caltech/IPAC)"),
+
     html.Div([
         html.Label("Enter Redshift:"),
         dcc.Input(id='redshift-input', value='0', type='number', step=0.01, min=0),
@@ -166,7 +167,7 @@ app.layout = html.Div([
         figure={
             'data': transmission_traces, 
             'layout': go.Layout(
-                title='Made by Thomas Lai (Caltech/IPAC)', 
+                title='Transmission Profiles', 
                 xaxis={'title': 'Wavelength', 'type': 'log'}, 
                 yaxis={'title': 'Transmission'},
                 yaxis2={
