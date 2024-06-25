@@ -246,4 +246,4 @@ def update_spectrum_plot(redshift_value, selected_species, existing_figure):
 
     return existing_figure
 
-app.run_server(debug=True, use_reloader=True, port=8052)
+app.run_server(debug=True)#, use_reloader=True, port=8052)
