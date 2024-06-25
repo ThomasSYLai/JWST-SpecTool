@@ -250,4 +250,8 @@ logging.basicConfig(level=logging.INFO)
 logging.info(f"Current working directory (before run_server): {os.getcwd()}")
 logging.info(f"Contents of current directory (before run_server): {os.listdir()}")
 
-app.run_server(debug=True, use_reloader=True, port=8052)
+# app.run_server(debug=True, use_reloader=True, port=8052)
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 8050))
+    app.run_server(host='0.0.0.0', port=port)
