@@ -185,7 +185,7 @@ app.layout = html.Div([
     ),
     
     html.Div([
-        html.Label("Toggle Species:"),
+        html.Label("Toggle Species (line list from the PDRs4All team):"),
         dcc.Checklist(
             id='species-checklist',
             options=species_options,
