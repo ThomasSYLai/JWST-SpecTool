@@ -166,7 +166,7 @@ app.layout = html.Div([
         figure={
             'data': transmission_traces, 
             'layout': go.Layout(
-                title='Transmission Profiles', 
+                title='Made by Thomas Lai (Caltech/IPAC)', 
                 xaxis={'title': 'Wavelength', 'type': 'log'}, 
                 yaxis={'title': 'Transmission'},
                 yaxis2={
