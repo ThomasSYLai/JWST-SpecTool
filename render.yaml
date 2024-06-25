@@ -9,7 +9,7 @@ services:
     # A src/app.py file must exist and contain `server=app.server`
     #startCommand: gunicorn --chdir src app:server
     repo: https://github.com/ThomasSYLai/JWST-SpecTool.git # Default: Repo containing render.yaml
-    startCommand: gunicorn app:server
+    startCommand: gunicorn --chdir src app:server
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0
